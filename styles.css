@@ -1,0 +1,404 @@
+body {
+    background: #f8fafc;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+nav a:hover,
+nav a:focus {
+    background: rgba(0,123,255,0.15); /* subtle blue highlight */
+    color: #007bff;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.12);
+    text-decoration: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    transition: transform 0.3s;
+}
+
+@media (max-width: 767.98px) {
+    .card-img-top {
+        width: 100%;
+        height: 360px;         
+        max-width: 100%;
+        max-height: 340px;
+        margin-top: 12px;      
+        padding-top: 0;      
+    }
+    .grading-img {
+        width: 100%;
+        max-width: 95vw;
+        height: 300px !important;
+        max-height: 320px !important;
+        margin-top: 16px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
+
+/* Homepage Section Sports Background */
+#home {
+    position: relative;
+    background: url('images/cards-background.webp') center center/cover no-repeat;
+    color: #fff;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.35); 
+    z-index: 1;
+}
+
+#home,
+#home h1,
+#home h2,
+#home h3,
+#home p,
+#home a,
+#home .btn {
+    text-shadow: 0 4px 16px rgba(0,0,0,0.7),
+                 0 1px 2px rgba(0,0,0,0.6);
+}
+
+#home .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Card Grading Section Styles */
+#grading {
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#grading h2 {
+    color: #007bff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+#grading h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #6610f2;
+    margin: 16px auto 0;
+    border-radius: 2px;
+}
+
+#grading h5 {
+    color: #6610f2;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+#grading ol {
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+    margin-bottom: 1rem;
+}
+
+#grading li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+#grading .btn-outline-primary {
+    border-width: 2px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+#grading .btn-outline-primary:hover {
+    background: #6610f2;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 767.98px) {
+    #grading .row {
+        flex-direction: column-reverse;
+    }
+}
+
+/* Grading image specific size */
+.grading-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+/* Make the hero's outline-light button match the primary CTA color */
+#home .btn-outline-light {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+#home .btn-outline-light:hover,
+#home .btn-outline-light:focus {
+    background: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+}
+
+/* Product page: constrain carousel so images show full cards and don't dominate the page */
+.carousel {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner {
+    /* keep default Bootstrap behavior (no flex) so sliding works correctly */
+}
+
+.carousel-inner .carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 360px; /* increased desktop height for larger view */
+    object-fit: contain; /* show the full card */
+    background: transparent; /* remove white box to reduce whitespace */
+    padding: 0; /* remove padding so image fills the carousel area more */
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 767.98px) {
+    .carousel {
+        max-width: 95%;
+    }
+    .carousel-inner .carousel-item img {
+        max-height: 240px; /* mobile - show full card but smaller */
+    }
+}
+
+/* Additional mobile refinements to improve spacing, readability and tap targets */
+@media (max-width: 767.98px) {
+    /* Make hero less tall and text more readable on small screens */
+    #home {
+        min-height: 300px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    #home h1 {
+        font-size: 2rem;
+        line-height: 1.15;
+        margin-bottom: 0.5rem;
+    }
+    #home .lead {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+        text-shadow: none; /* remove heavy shadow for clarity */
+    }
+    /* Make supporting tagline clearly visible but not overpowering */
+    #home .text-light.small {
+        font-size: 0.95rem;
+        color: rgba(255,255,255,0.95);
+        text-shadow: none;
+        margin-bottom: 0.75rem;
+    }
+    /* Make primary hero CTA an easier tap target on mobile */
+    #home .btn-lg {
+        display: block;
+        width: 100%;
+        max-width: 360px;
+        margin: 0.75rem auto 0;
+        padding: 12px 16px;
+    }
+
+    /* Improve card stacking and spacing */
+    .card {
+        margin-bottom: 1.25rem;
+    }
+    .card-deck {
+        display: block; /* stack cards vertically on small screens */
+    }
+    .card-deck .card {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    /* Make card buttons full-width for easier tapping */
+    .card-body .btn {
+        width: 100%;
+    }
+
+    /* Slightly reduce feature image heights for tighter layout */
+    .card-img-top {
+        height: 240px;
+        max-height: 240px;
+        object-fit: contain;
+    }
+
+    /* Slightly smaller carousel images on very small screens */
+    .carousel-inner .carousel-item img {
+        max-height: 200px;
+    }
+
+    /* Make grading image a bit smaller and centered */
+    .grading-img {
+        height: auto !important;
+        max-width: 88vw;
+        max-height: 220px !important;
+    }
+}
+
+/* Make the product detail/provenance area visually distinct and clean */
+.product-details {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.04);
+    margin-bottom: 1rem;
+}
+
+.product-details h5 {
+    margin-bottom: 0.75rem;
+    color: #222;
+}
+
+.product-details dl {
+    margin: 0;
+}
+
+.product-details dt {
+    font-weight: 700;
+    color: #333;
+}
+
+.product-details dd {
+    margin-left: 0;
+    margin-bottom: 0.75rem;
+    color: #555;
+}
+
+/* Ensure related item thumbnails don't grow too tall */
+.card-deck .card-img-top {
+    max-height: 220px;
+    object-fit: contain; /* show full card without cropping */
+    background: #fff; /* subtle backdrop to separate image from card */
+    padding: 8px; /* small padding to avoid touching card edges */
+    border-radius: 6px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-deck .card {
+    min-width: 0;
+}

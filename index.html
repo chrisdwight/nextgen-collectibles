@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="contact" href="contact.html">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">NextGen Collectibles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rare.html">Rare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vintage.html">Vintage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="collectors.html">Collectors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Homepage Section -->
+        <section id="home" class="container-fluid text-center py-5">
+            <div class="container">
+                <h1 class="display-4">Welcome to NextGen Collectibles</h1>
+                <p class="lead mt-3">
+                    Discover a world of rare trading cards and memorabilia. Whether you're a seasoned collector or just starting, we have something for everyone.
+                </p>
+                <p class="text-light small mt-2">Browse our collections and contact us to inquire about availability and pricing.</p>
+                <a href="contact.html" class="btn btn-primary btn-lg mt-4">Get in Touch</a>
+            </div>
+        </section>
+
+        <!-- Featured Items Section -->
+        <section id="featured" class="container py-5">
+            <h2 class="text-center mb-4">Featured Collectibles</h2>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="images/kobe.jpeg" class="card-img-top" alt="Rare Trading Card" loading="lazy" srcset="images/kobe.jpeg 800w, images/kobe.jpeg 400w" sizes="(max-width: 768px) 90vw, 300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Rare Trading Card</h5>
+                            <p class="card-text">A must-have for any collector. Limited edition and highly sought after.</p>
+                            <a href="rare.html" class="btn btn-outline-primary" aria-label="Request availability for rare items">Request Availability</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="images/baberuth.jpeg" class="card-img-top" alt="Vintage Memorabilia" loading="lazy" srcset="images/baberuth.jpeg 800w, images/baberuth.jpeg 400w" sizes="(max-width: 768px) 90vw, 300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Vintage Memorabilia</h5>
+                            <p class="card-text">Own a piece of history with our exclusive vintage memorabilia collection.</p>
+                            <a href="vintage.html" class="btn btn-outline-primary" aria-label="Request availability for vintage items">Request Availability</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card">
+                        <img src="images/joemontana.jpeg" class="card-img-top" alt="Collector's Edition" loading="lazy" srcset="images/joemontana.jpeg 800w, images/joemontana.jpeg 400w" sizes="(max-width: 768px) 90vw, 300px">
+                        <div class="card-body">
+                            <h5 class="card-title">Collector's Edition</h5>
+                            <p class="card-text">Perfect for serious collectors. Limited stock available.</p>
+                            <a href="collectors.html" class="btn btn-outline-primary" aria-label="Request availability for collector's editions">Request Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card Grading Section -->
+<section class="container py-5">
+    <h2 class="text-center mb-4">Card Grading Services</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0 text-center">
+            <img src="images/ronaldo.jpeg" class="grading-img rounded shadow" alt="Graded Trading Card Example">
+        </div>
+        <div class="col-md-6">
+            <h5>What is Card Grading?</h5>
+            <p>
+                Card grading is the process of having your trading cards professionally evaluated for authenticity and condition. Graded cards are sealed in tamper-proof cases and assigned a grade, which can significantly increase their value and desirability.
+            </p>
+            <h5>How Does It Work?</h5>
+            <ol class="text-left pl-3">
+                <li>Submit your card(s) to a certified grading service through our website or at one of our events.</li>
+                <li>Experts inspect your card for centering, corners, edges, and surface quality.</li>
+                <li>Your card is assigned a grade (usually 1–10) and sealed in a protective case with a certification label.</li>
+                <li>Receive your graded card back, ready for display or sale!</li>
+            </ol>
+            <p>
+                <strong>Why grade your cards?</strong> Grading protects your investment, increases resale value, and gives buyers confidence in authenticity and condition.
+            </p>
+            <a href="contact.html" class="btn btn-outline-primary mt-2">Ask About Grading</a>
+        </div>
+    </div>
+</section>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2025 NextGen Collectibles</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
